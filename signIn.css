@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --color-background-color: #252424;
+  --color-dark-blue: #0283d4;
+  --color-light-blue: #1abcfe;
+  --color-light-green: #1dc3ca;
+  --color-white: #efefef;
+  --color-red: #e54849;
+  --color-orange: #d8892f;
+  --color-green: #59b868;
+  --color-slate-gray: #63768d;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--color-background-color); */
+  font-size: 16px;
+}
+
+.paperContianer {
+  position: relative;
+  background-color: white;
+  padding: 3.5rem 2.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+}
+
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.signInContainer > * {
+  margin-bottom: 2.5rem;
+}
+
+.signInContainer div:last-child {
+  margin-bottom: 0px;
+}
+
+.signInContainer h1 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4375rem;
+  /* Background-color */
+
+  color: #252424;
+}
+
+.signInContainer h3 {
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 0.5rem;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+
+  /* Background-color */
+
+  color: #252424;
+}
+
+input {
+  padding: 0.75rem;
+  border: 0px;
+  width: 100%;
+  border-bottom: 1px solid var(--color-slate-gray);
+  outline: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+input:focus {
+  outline: 1px solid var(--color-slate-gray);
+}
+
+.inputGroup > * {
+  padding-bottom: 1rem;
+}
+.inputWithLeadingIcon {
+  /* background-color: #0283d4; */
+  position: relative;
+}
+
+.inputWithLeadingIcon input {
+  padding-left: 3rem;
+}
+
+i {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--color-slate-gray);
+}
+
+#forgotText {
+  float: right;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+
+#formFooterPrivacy {
+  color: var(--color-light-blue);
+}
+
+#formFooterTOS {
+  color: var(--color-red);
+}
+
+.signInContainer a {
+  text-decoration: none;
+  color: var(--color-orange);
+}
+
+.formFooter p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #252424;
+}

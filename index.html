@@ -1,39 +1,37 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nav Bar</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="navbar">
+      <a href="">
+        <img
+          src="https://analytics.fluidefi.com/static/img/fluidefi_logo_40.png"
+          alt="Fluidefi Logo"
+          id="navBarLogo"
+        />
+      </a>
 
-    <ul class="navBar">
-        <li class="logo">
-            <a href="">
-                <img src="https://analytics.fluidefi.com/static/img/fluidefi_logo_40.png" alt="Fluidefi Logo" srcset=""
-                    id="navBarLogo">
-            </a>
-        </li>
-        <li class="navigationLink">
-            <a href="./home" class="home">Home</a>
-        </li>
-        <li class="navigationLink">
-            <a href="./swap" class="liquidityPool active">Liquidity Pool</a>
-        </li>
-        <li class="navigationLink">
-            <a href="./contactUs" class="contactUs">Contact Us</a>
-        </li>
-        <a href="./profile" class="profile">
-            <li class="profile">
-            </li>
-        </a>
+      <a href="./home" class="navigationLink" id="home">Home</a>
 
+      <a href="./swap" class="active navigationLink" id="swap">Swap</a>
 
-    </ul>
+      <a href="./contactUs" class="navigationLink" id="pool">Pool</a>
 
-</body>
+      <a href="./contactUs" class="navigationLink" id="contactUs">Contact Us</a>
 
+      <div class="spacer"></div>
+
+      <a href="./signIn" class="navigationLink" id="signIn">Sign In</a>
+
+      <a href="./signIn" class="navigationLink hidden" id="signIn"
+        >Welcome <span id="profileName">Esteak Shapin</span></a
+      >
+    </div>
+  </body>
 </html>

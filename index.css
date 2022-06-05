@@ -1,81 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-    --color-background-color: #252424;
-    --color-dark-blue: #0283d4;
-    --color-light-blue: #1abcfe;
-    --color-light-green: #1dc3ca;
-    --color-white: #efefef;
-    --color-red: #e54849;
-    --color-orange: #d8892f;
-    --color-green: #59b868;
+  --color-background-color: #252424;
+  --color-dark-blue: #0283d4;
+  --color-light-blue: #1abcfe;
+  --color-light-green: #1dc3ca;
+  --color-white: #efefef;
+  --color-red: #e54849;
+  --color-orange: #d8892f;
+  --color-green: #59b868;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background-color);
 }
 
-ul.navBar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: 0;
-    padding: .5em;
-    display: flex;
-    align-items: center;
+.navBar {
+  background-color: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 1em;
+  align-items: center;
+  overflow: hidden;
 }
 
-ul.navBar li {
-    /* background-color: #0283d4; */
-    text-align: center;
-    justify-content: center;
+.navBar .spacer {
+  flex-grow: 2;
 }
 
-ul.navBar .navigationLink a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+a.navigationLink {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
 
-    /* white */
+  padding: 0.5em;
 
-    color: #EFEFEF;
-    /* margin-right: 1em; */
-    margin-left: 1em;
+  /* white */
 
-    text-decoration: none;
+  color: #efefef;
+  /* background-color: #59b868; */
+  margin-left: 1em;
+
+  text-decoration: none;
 }
 
 #navBarLogo {
-    max-height: 40px;
-
+  max-height: 40px;
 }
 
 /* highlighting active link */
-.navBar .navigationLink .active {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+.navbar .active {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
 
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 /* profile picture */
-.navBar li.profile {
-    background-color: var(--color-green);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    order: 1;
+.navBar #profileName {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-red);
 }
 
-.navBar a.profile {
-    align-self: flex-end;
-    order: 1;
+.hidden {
+  display: none;
+}
+
+/* TODO: implement mobile queries */
+/* display mobile navBar */
+@media only screen and (max-width: 700px) {
 }

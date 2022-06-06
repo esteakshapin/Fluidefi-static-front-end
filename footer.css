@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --color-background-color: #252424;
+    --color-dark-blue: #0283d4;
+    --color-light-blue: #1abcfe;
+    --color-light-green: #1dc3ca;
+    --color-white: #efefef;
+    --color-red: #e54849;
+    --color-orange: #d8892f;
+    --color-green: #59b868;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-color);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.spacer {
+    flex-grow: 2;
+}
+
+p {
+    color: white;
+}
+
+.footer {
+    background-color: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid var(--color-white);
+    justify-content: center;
+}
+
+.footer p {
+    color: var(--color-white);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+
+}
+
+/* borrowed form sign in */
+#formFooterPrivacy {
+    color: var(--color-light-blue);
+}
+
+#formFooterTOS {
+    color: var(--color-red);
+}
